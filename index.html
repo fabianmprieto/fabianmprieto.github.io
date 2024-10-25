@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=0.8">
+    <link rel="stylesheet" href="resources/styles/index.css">
+    <title>Fabian Prieto Project Portfolio</title>
+</head>
+<body>
+<div class="container">
+    <h1>- Fabian Prieto - </h1>
+    <h1>- Aerospace Engineer -</h1>
+    <img src="resources/images/me.JPG" alt="me">
+</div>
+<h2>Contact Information</h2>
+<h4>Email:</h4> <a href="mailto:fabianmprieto135@gmail.com">fabianmprieto135@gmail.com</a>
+<h4>Phone:</h4> <a href="tel:8643560706">864-356-0706</a>
+<h4>LinkedIn:</h4> <a href="www.linkedin.com/in/fabian-prieto-2bbb981ab">Fabian linkedin</a>
+
+<h2>Education</h2>
+<h5>Auburn University - Aug 2020 - Aug 2024</h5>   
+<h5>Bachelor's Degree in Aerospace Engineering</h5>
+
+<h2 id="#top">Project Portfolio</h2>
+<p>Welcome to my Website Portfolio. Below you will find the various projects I have participated in, as well as ongoing projects I am partaking in, each divided up based on the field in which it is most relevant, and feel free to use these links below that quickly get you to the relevant fields you are seeking:</p>
+
+<!-- Create a list of links to jump to different sections -->
+<ul>
+    <li><a href="#structural">Structural Analysis Projects</a></li>
+    <li><a href="#engine">Aircraft Engine Analysis</a></li>
+    <li><a href="#aerodynamics">Aerodynamic Analysis</a></li>
+    <li><a href="#coding">Coding Projects</a></li>
+    <li><a href="#other">Major Projects</a></li>
+</ul>
+
+<!-- Structural Analysis Projects -->
+<h3 id="structural">Structural Analysis Projects</h3>
+<!--Project 1-->
+<h4>Cryogenic Fuel Tank Analysis</h4>
+<h5>Oct - Dec 2023</h5>
+<ul>
+    <li>A group project during which my team researched and designed a conceptual cryogenic fuel tank with my main task being to create models and conduct heat transfer analysis.</li>
+    <li>The main focus of our design was to determine whether it was capable of withstanding the loads that we determined and also maintain the temperature necessary for the fuel.</li>
+    <li>After extensive research into similar systems, materials, and structural designs we tested various design configurations utilizing an FEA excel sheet created by our team in order to verify the tank design.</li>
+    <li>Once the design was established 3D models were rendered in both Solidworks and Patran (FEA analysis software) which were then used to run FEA analysis and heat transfer analysis on both the tank and the supporting structures.</li>
+    <li>The results of the preliminary analysis and the later analysis were compared in order to back up our initial results and then collected into various technical reports over the course of the project with our findings then being presented to our class and instructor.</li>
+</ul>
+<figure>
+<img src="resources/images/cryogenicfueltank.png" alt="tank" class="tank-image">
+<figcaption>Results from analysis of insulation effects for Cryogenic fuel tank</figcaption>
+</figure>
+<!--Project 2-->
+<h4>FEA Analysis of Simple Aircraft Structures and Configurations</h4>
+<h5>Sep - Dec 2023, May - July 2024</h5>
+<ul>
+    <li>Individual project in which I was tasked with conducting Finite Element Analysis (FEA) on various simple aircraft structures eventually leading up to the FEA of a simple fixed wing.</li>
+    <li>The structures were analyzed for various stresses and shear flow for given loads upon stringers, spar caps, and skin utilizing an FEA Matlab tool chain I developed.</li>
+    <li>Once a preliminary FEA was conducted utilizing Matlab scripts, FEA software Patran was used to create a 3D model of the Full Fixed Wing with the given loads.</li>
+    <li>After the model creation, the analysis was conducted utilizing the software, and results were compared to the results from preliminary analysis and collected into multiple technical reports over the course of the project.</li>
+</ul>
+<figure>
+<img src="resources/images/PatranWing.PNG" alt="wing" class="wing-image">
+<figcaption>Final Patran model for simple wing FEA analysis</figcaption>
+</figure>
+<!--Project 3-->
+<h4>Structural Dynamics Analysis</h4>
+<h5>Jan - May 2024</h5>
+<ul>
+    <li>Individual project in which I was tasked with conducting Structural dynamics analysis on various systems utilizing Python-based scripts that were run on Alabama Super Computer Cluster (ASC).</li>
+    <li>Scripts were created utilizing FEnics, a finite element package, where scripts contained the data related to analysis of the systems such as geometry and meshing, and the static and dynamic analysis of the system.</li>
+    <li>The scripts were then imported into the ASC, and depending on the depth of the analysis, it would be sometime between runs after which the results were viewed in a visualization software, VisIT.</li>
+    <li>The various systems were analyzed under different loads, durations, meshing, and even scenario testing, and the results were collected into technical reports to be submitted.</li>
+</ul>
+<figure>
+<img src="resources/images/strudyn.png" alt="structural dynamics" class="struc-image">
+<figcaption>Sample from report for structural dynamics analysis</figcaption>
+</figure>
+<!--Project 4-->
+<h4>Conceptual Aircraft Wing Analysis</h4>
+<h5>May - July 2024</h5>
+<ul>
+    <li>Individual project in which I was tasked with designing and analyzing the conceptual wing of a theoretical aircraft created by an AI based on a prompt I provided.</li>
+    <li>The AI software was used to establish theoretical dimensions and material properties, which would be utilized in the later analysis. The finalized design of the aircraft was determined after discussions with the AI to ensure somewhat realistic parameters based on the initial prompt, and a graphic of the design was created with another AI software.</li>
+    <li>After this, the FEA analysis was conducted on the wing of the aircraft using a MATLAB toolchain I developed for the initial wing configuration of stringers, skin thicknesses, etc.</li>
+    <li>Following the preliminary analysis with MATLAB, another analysis was performed in Patran (FEA Software), where a full 3D model of the wing was created and analyzed under various determined loads that the wing would encounter.</li>
+    <li>The results of both the preliminary and Patran analyses were compared and used to establish margins of safety and areas for improvement. The entire analysis process was documented in multiple technical reports and eventually presented to both the instructor and the class.</li>   
+</ul>
+<figure>
+<img src="resources/images/Concept.jpg" alt="conceptual wing" class="concept-image">
+<figcaption>Presentation Poster for conceptual wing analysis</figcaption>
+</figure>
+<h3><a href="#top">Click to quickly return to top of the site.</a></h3>
+<!-- Aircraft Engine Analysis -->
+<h3 id="engine">Aircraft Engine Analysis</h3>
+<!--Project 1-->
+<h4>NPSS Aircraft Engine Analysis</h4>
+<h5>Sep - Dec 2023</h5>
+<ul>
+    <li>Individual project analyzing various aircraft engine types in scenarios simulated in NPSS with developed scripts utilizing NPSS software.</li>
+    <li>Performed analysis utilizing both hand calculations and developed NPSS scripts to simulate various engine conditions, performance measures, and iterative analysis.</li>
+    <li>The engines analyzed were ramjets to turbofans to visualize the performance differences in the engine types and results of these analysis were collected and discussed in technical reports for each engine type.</li>
+</ul>
+<figure>
+    <img src="resources/images/npss.png" alt="tank" class="npss-image">
+<figcaption>Report from the results of the analysis of a High Bypass Turbofan</figcaption>
+</figure>
+<!--Project 2-->
+<h4>Turbofan Trade Study</h4>
+<h5>Nov - Dec 2023</h5>
+<ul>
+    <li>Individual project during which I was tasked with conductomg trade study on the design and optimzation of a turbofan engine to meet certain performances measures.</li>
+    <li>Utilized developed NPSS scripts to run iterative analysis for varying engine parameters to determine the design needed to meet the asked for criteria.</li>
+    <li>The trade study was performed for each component to meet each asked criteria and the full analysis and process was documented into a technical report.</li>
+</ul>
+<figure>
+    <img src="resources/images/trade.png" alt="tank" class="trade-image">
+<figcaption>Report of the results from Trade Study</figcaption>
+</figure>
+<!--Project 3-->
+<h4>Dual-spool Turbofan Engine Performance Analysis</h4>
+<h5>Jun - Jul 2024</h5>
+<ul>
+    <li>Developed scripts to perform Parametric Cycle Analysis and Component efficiency analysis upon a dual spool turbofan engine given set characteristics based on reference performance calculations.</li>
+    <li>The developed script ran at varying altitudes, throttle settings, and Mach numbers and collected the data of various engine components to determine how they are affected by altitude and Mach number.</li>
+    <li>The results of the analysis conducted in Matlab were compared to the results of an existing aricraft engine analysis tools to compare as well as discuss trends in performance in a technical report.</li>
+</ul>
+<figure>
+    <img src="resources/images/PCA.png" alt="conceptual wing" class="pca-image">
+    <figcaption>Sample of Matlab PCA Script</figcaption>
+</figure>
+
+<h3><a href="#top">Click to quickly return to top of the site.</a></h3>
+<!-- Aerodynamic Analysis -->
+<h3 id="aerodynamics">Aerodynamic Analysis</h3>
+<!--Project 1-->
+<h4>Aerodynamic Lab Testing</h4>
+<h5>Sep - Dec 2023</h5>
+<ul>
+    <li>Group testing where we conducted wind tunnel and other aerodynamics experiments in order to visualize various aerodynamic concepts and gain better understanding of said concepts and how they affect various airfoil shapes.</li>
+    <li>The different tests utilized various aerodynamic tools such as wind tunnels, manometers, pressure transducers, and Pitot static tubes to visualize aerodynamic concepts such as jet streams or effects of changes in pressure at varying wind speeds.</li>
+    <li>These test were conducted as group projects and all data was collected and verified via aerodynamic calculations in order to compare testing results and findings which were collected in technical reports.</li>
+</ul>
+<figure>
+<img src="resources/images/aero.jpg" alt="conceptual wing" class="aero-image">
+<figcaption>Wind Tunnel Testing</figcaption>
+</figure>
+<!--Project 2-->
+<h4>6DOF Learjet C-21 Aircraft Simulation</h4>
+<h5>Mar - May 2024</h5>
+<ul>
+    <li>Individual project during which I was tasked with creating and altering a 6DOF simulation for a C-21 Learjet in a Matlab Toolchain and test various flight controls.</li>
+    <li>I created an atmosphere model and transformation matrix function to implement with other Matlab functions which were partial given and altered to simulate Steady Level Unaccelerated Flight at set flight controls for given aircraft data or derived aerodynamic properties</li>
+    <li>The main focus of the simulation was to run with varying flight controls in order to visualize the effects of flight controls dampening the fluctuations of the aircraft in flight, such as in altitude and pitch angle.</li>
+</ul>
+<figure>
+<img src="resources/images/VtoI.png" alt="conceptual wing" class="lear-image">
+<figcaption>Sample Matlab script for Transformation function</figcaption>
+</figure>
+<h3><a href="#top">Click to quickly return to top of the site.</a></h3>
+<!-- Coding Projects -->
+<h3 id="coding">Coding Projects</h3>
+<!--Project 1-->
+<h4>Developing Portfolio Website</h4>
+<h5>Sep - Ongoing 2024</h5>
+<ul>
+    <li>This portfolio website was created to give possible employers some of my other relevant experiences to expand upon my limited resumes in order to show the versitility of my skills and ability to learn new ones.</li>
+    <li>This project has given me the opportunity to learn html and css coding languages, the basics of web development, and begin exploring some java script as well.</li>
+    <li>This website will more than likely continue to be an onging project with me adding my own personal projects on here as I please in order to display my experience in greater detail than just a one page resume.</li>
+</ul>
+<figure>
+<img src="resources/images/portfolio.png" alt="conceptual wing" class="web-image">
+<figcaption>Sample of html script fo the site</figcaption>
+</figure>
+<h3><a href="#top">Click to quickly return to top of the site.</a></h3>
+<!-- Major Projects -->
+<h3 id="other">Major Projects</h3>
+<!--Project 1-->
+<h4>Lunar Prospecting Rover Design Project</h4>
+<h5>Sep 2023 - May 2024</h5>
+<ul>
+    <li><strong>Group Senior Design Project:</strong> We designed a conceptual lunar prospecting rover capable of exploring and surviving at the lunar south pole for a year-long mission, based on the NASA RASCAL 2024 competition prompt.</li> 
+    <li><strong>Subsystem Collaboration:</strong> The group was divided into two subsystems, and I participated in the design and co-leadership of the rover's power generation system, focusing specifically on the mechanical aspects.</li>
+    <li><strong>Oversight of Mechanical System:</strong> I oversaw the research and design of the mechanical system, which included dimensions, materials, deployment methods, movement, solar panel articulation, 3D modeling/testing, and prototype design and construction. Additionally, I ensured that deadlines were met and team members were keyed into the needs of the mission and staying tuned into the progress of other groups within the team to ensure compatibility while brainstorming ideas for our design.</li> 
+    <li><strong>Project Structure and Feedback:</strong> The project was structured to allow us to research and design our system at our own pace, while continuously improving our design based on feedback from experienced aerospace engineers with relevant knowledge in space missions based on our technical reports and presentations.</li> 
+    <li><strong>Final Deliverables:</strong> By the end of the project, we submitted various technical reports and delivered a Senior Design Capstone Presentation. Our design had progressed to the analysis of structural designs and the creation of a prototype for one of the main components: the solar tracking system. We also began exploring the manufacturing processes and cost implications of the system.</li>
+</ul>
+<figure>
+<img src="resources/images/lunar.jpg" alt="conceptual wing" class="lunar-image">
+<figcaption> Description of Rover systems</figcaption>
+</figure>
+<figure>
+<video 
+    width="500px" 
+    height="400px" 
+    controls="controls">
+    <source src=
+    "/Users/fabianprieto/Coding_Projects/DevProject/resources/video/test.mp4" 
+     type="video/mp4" />
+</video>
+<figcaption>Testing our protoype solar tacking system</figcaption>
+</figure>
+<h3><a href="#top">Click to quickly return to top of the site.</a></h3>
+</body>
+<footer>
+    &copy; 2024 Fabian Prieto
+</footer>
+</html>
