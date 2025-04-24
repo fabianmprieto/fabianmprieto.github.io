@@ -258,7 +258,7 @@ nav {
     border-bottom: 2px solid #00509E; /* Light gray bottom border */
   }
   
-  nav a {
+nav a {
     color: #00509E;
     text-decoration: none;
     margin-right: 10px;
@@ -274,7 +274,7 @@ nav {
     transition: background-color 0.3s ease, color 0.3s ease;
   }
   
-  nav a:hover {
+nav a:hover {
     text-decoration: none;
     background-color: #00509E;
     color: white;
