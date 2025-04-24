@@ -15,31 +15,42 @@ body {
     margin: 0;
 }
 
-/* Page Layout */
+/* Top of Page Title Layout */
 .container {
     display: flex;
-    justify-content: space-between; /* Keep the image on the right */
-    align-items: center; /* Center items vertically */
+    flex-wrap: wrap;              /* Allows wrapping on small screens */
+    justify-content: space-between;
+    align-items: center;
     padding: 20px;
-}
-
+    gap: 20px;                    /* Space between text and image */
+    border: 2px solid #ccc;
+    border-radius: 12px;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.4);
+  }
+  
 .text-container {
     display: flex;
-    flex-direction: column; /* Stack h1 elements vertically */
-}
-
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 5px;
+    flex: 1 1 300px;  /* Add space between the lines */
+  }
+  
 .container h1 {
-    margin: 0; /* Remove default margin */
-    padding: 0; /* Remove default padding */
-    font-family: 'Arial', sans-serif; /* Ensure the same font is used */
-}
-
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    font-size: 4.75em;
+  }
+  
 .container img {
-    width: 200px; /* Adjust the width of the image as needed */
-    height: auto; /* Maintain aspect ratio */
-    border-radius: 25%; /* Optional: make the image a circle */
-}
-
+    width: 100%;
+    max-width: 250px;
+    height: auto;
+    border-radius: 25%;
+    flex-shrink: 0;
+  }
 /* Header */
 h1 {
     text-align: center;
@@ -59,7 +70,7 @@ h2, h3 {
 /* Contact */
 
 h4 {
-        font-size: 1.0 em; /* Sets the font size to 1.5 times the base size */
+        font-size: 1.0em; /* Sets the font size to 1.5 times the base size */
         color: #333; /* Sets the text color to dark gray */
         margin-top: 20px; /* Adds space above the heading */
         font-weight: bold; /* Makes the text bold */
@@ -241,3 +252,30 @@ figcaption {
         width: 80%;
     }
 }
+nav {
+    background: #f4f4f4;
+    padding: 15px;
+    border-bottom: 2px solid #00509E; /* Light gray bottom border */
+  }
+  
+  nav a {
+    color: #00509E;
+    text-decoration: none;
+    margin-right: 10px;
+    font-size: 1.2em;
+    font-family: 'Arial', sans-serif;
+  
+    /* New styles for curved square effect */
+    padding: 8px 16px;
+    border: 2px solid #00509E;
+    border-radius: 12px;
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.1);
+    display: inline-block;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  nav a:hover {
+    text-decoration: none;
+    background-color: #00509E;
+    color: white;
+  }
